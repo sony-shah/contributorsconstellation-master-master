@@ -1,0 +1,189 @@
+.c-addtask{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   justify-content: space-between;
+
+    background-color:rgba(0, 0, 0, 1);
+    z-index: 1;
+    @extend .anim;
+    @extend .box-shadow;
+    &.hidden{
+        transform: translateY(100%); 
+    }
+    &.show{
+        transform: translateY(0%); 
+    }
+    
+   
+
+    .container{
+        padding: 50px 20px;
+        border-radius: 40px 40px 0 0;
+        background-color: #fff;
+        height: 100%;
+        overflow-y:scroll ;
+
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div{
+                ul{
+                    padding: 0px 0;
+                    margin: 0px;     
+                    label{
+                        width: 100%;
+                        color: $textclr;
+
+
+                        select{
+                            // color:#777979;
+                            // width: 100%;
+                            // padding: 10px;                           
+                            // line-height: 20px;
+                            // border:1px solid $bordercolor;
+                            // font-size: 16px;
+                            // border-radius: 5px;
+                            width: 100%;
+                            padding: 10px 0;
+                            line-height: 20px;
+                            font-size: 16px;
+                            border-top-style: hidden;
+                            border-right-style: hidden;
+                            border-left-style: hidden;
+                            border-bottom: 1px solid #dce1ed;
+                            background-color: transparent;
+                            outline: none;
+                            // color: #74788d;
+                           
+                            &:focus{         
+                                outline-color:#ced4da;
+                                // &::placeholder {
+                                //     opacity: 0;
+                                //   }
+                            }
+                            .option{
+                                margin-right: 10px;
+                                border-radius: 10px;
+
+                                &.option-value{
+                                    background-color: #132a70;
+                                }
+                                
+                            }
+                            
+                        }
+
+                      
+                    }
+                    li{
+                        list-style-type: none; 
+                        display: flex;
+                        column-gap: 20px;
+                        padding-bottom: 20px;
+
+                            sup {
+                                font-size: 16px;
+                            color: red;
+                        }
+                           
+                        &.custom-upload{
+                            flex-direction: column;
+                            // align-items: flex-start;
+
+                            .upload-multi-file{
+                              width: 100%;
+                                display:flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                // border-bottom: 1px solid $borderclr;
+                                padding: 4px 0;
+                              
+
+                            .images-btn{
+                                
+                                display: flex;
+                                
+                                padding: 5px 0;
+                                font-size: 16px;
+                             
+                                justify-content: center;
+                                border-radius: 5px;
+                                max-width: 100px;
+                                border-color: transparent;
+                                background-color: #132a70;
+                                color: #fff;   
+                                margin: 5px 0;
+                                
+                                }
+
+                                .btn-disable{
+                                    display: none;
+                                }
+
+                            }
+
+                           
+                        }
+                       
+                            &.imag{
+                                display:flex;
+                                column-gap: 10px;
+                                row-gap: 10px;
+                                flex-wrap: wrap;
+                               
+                                div{
+                                    width: 80px;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                    
+                }
+
+                
+                    p{
+                        color: $redcolor;
+                        font-size: 16px;
+                        margin: 0;
+                        font-weight: 500;
+                        // font-family: $mukta;
+                        // padding-bottom: 20px;
+                
+                        }
+                    
+                }
+            
+              
+            } 
+    
+            .submitTask{
+                display: flex;
+                margin-top: 30px;
+                
+                button{
+                    width: 100%;
+                    padding: 10px;
+                    line-height: 20px;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    border-color: transparent;
+                    background-color: $mcolor;
+                    color: #fff;                 
+                }
+                
+            }
+    
+    
+        }
+    }
+
+    
+}

@@ -1,0 +1,182 @@
+.c-profile{
+    display: block;
+    // flex-direction: column;
+    // background-color: #5a55ca;
+    height: calc(100% - 54px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .footerbg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+    }
+
+    .container{
+        padding: 10px 20px;
+        border-radius: 40px 40px 0 0;
+        background-color: #f0f4fd;
+        height: calc(100vh - 96px);
+        position: relative;
+        z-index: 1;
+        overflow-y: auto;
+        // min-height: 100%;
+        .profiledetails{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            // border-radius: 25%;               
+               
+            // }
+
+          .profileDesc{
+                display: flex;
+                justify-content: center;
+                button{
+                    background-color: transparent;
+                    border: 0px;
+                    font-size: 20px;
+                    color: $bodytextcolor;
+                }
+            input{
+                width: 100%;
+                padding: 10px;
+                // padding-right: 40px;
+                line-height: 20px;
+                font-size: 16px;
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom: 1px solid #ced4da;
+                background-color: transparent;
+                outline:none;
+                text-transform: capitalize;
+                margin-left: 30px;
+               
+                &:disabled{
+                    background-color: transparent;
+                    text-align: center;
+                    border-bottom: none;
+                    color: #222;
+                    margin-left: 30px;
+                }
+               
+            }
+        }
+
+            .profilePic{
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 5px solid #dae4f4;
+                // background-color: #1f2e56;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                label{
+                    position: absolute;
+                    width: 100%;
+                    height: 30px;
+                    left: 0px;
+                    bottom:0px;
+                    padding: 0px;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    align-items: center;
+                    justify-content: center;
+                    display: flex;
+                    
+                    span{
+                        
+                     //display: flex;
+                     font-size: 24px;
+                     line-height: 30px;
+                     margin-top: 6px;
+                    color: #FFF;
+            
+                    // background-color: $mcolor;
+                    }
+                }
+                input{
+                    display: none;
+                }
+            }
+           
+            
+            h2{
+                font-size: 34px;
+                text-transform: capitalize;
+                line-height: 40px;
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 18px;
+                margin: 0;
+                margin-bottom: 20px;
+                line-height: 10px;
+                color: #b1b7ca;
+                display: flex;
+                justify-content: center;
+               
+                align-items:center ;
+                
+
+                span{
+                    font-size: 20px;
+                   
+                }
+                // align-items: center;
+                
+            }
+           
+        }
+
+        .points{
+            // padding-top: 20px 20px;
+            // background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            h2{
+                font-size: 20px;
+                color: #1f2e56;
+                text-align: center;
+                margin: 0;
+            }
+            h1{
+                font-size: 42px;
+                font-weight: 800;
+                margin: 0;
+                line-height: 70px;
+                text-align: center;
+                margin-top: 15px;
+                background-color: #fe6f06;
+                border-radius: 5px;
+                color: #FFF;
+              
+
+            }
+            .Logoutbtn{
+                padding: 10px;
+                background-color: transparent;
+                border: none;
+                font-size: 18px;
+                font-weight: 600;
+                font-family: "mukta";
+                color: #5a55ca;
+                font-style: oblique;
+                text-decoration-line: underline;
+            }
+        }
+         
+    }
+  
+}
+
